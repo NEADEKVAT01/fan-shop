@@ -1,0 +1,137 @@
+/* Catalog - Base Styles */
+.product-swiper {
+  margin: 1.5rem 0 0;
+  font-family: Lato;
+}
+
+.product-swiper .header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+  gap: 0.8rem;
+  background-color: white;
+}
+
+.product-swiper h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.product-swiper .navigation {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.product-swiper .counter {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.counter-total {
+  font-weight: 400;
+  font-size: 14px;
+  color: #797B86;
+}
+
+.product-swiper .navigation button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background: #90A2B5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-icon {
+  height: 14px;
+}
+
+.swiper-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+/* Tablet and larger */
+@media (min-width: 576px) {
+  .product-swiper {
+    margin: 2rem 0 0;
+    padding: 0 1.5rem;
+  }
+  
+  .product-swiper .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-swiper h2 {
+    font-size: 22px;
+  }
+  
+  .product-swiper .navigation button {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav-icon {
+    height: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-swiper {
+    margin: 3rem 0 0;
+    padding: 0;
+  }
+  
+  .product-swiper h2 {
+    font-size: 26px;
+  }
+  
+  .product-swiper .counter {
+    font-size: 22px;
+  }
+  
+  .counter-total {
+    font-size: 16px;
+  }
+  
+  .product-swiper .navigation button {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .swiper-container {
+    gap: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-swiper {
+    max-width: 1440px;
+    margin: 4rem auto 0;
+  }
+  
+  .product-swiper h2 {
+    font-size: 30px;
+  }
+  
+  .swiper-container {
+    justify-content: space-around;
+  }
+  
+  .product-swiper .navigation button {
+    width: 50px;
+    height: 50px;
+  }
+}
