@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.header__nav-cart {
+.header__cart {
   display: flex;
   margin: 0.4rem;
   align-items: center;
@@ -22,7 +22,7 @@
   height: 20px;
 }
 
-.header__nav-cart-text {
+.header__cart-text {
   display: flex;
   flex-direction: column;
   justify-content: center;

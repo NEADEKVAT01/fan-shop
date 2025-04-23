@@ -1,8 +1,8 @@
 <template>
-  <div class="modal_overlay" @click="catalog.itemClicked.isClicked=false" v-if="catalog.itemClicked.isClicked">
-    <div class="modal_container" @click.stop>
-      <div class="modal_container-img"><img :src="catalog.itemClicked.item.img_url" alt=""></div>
-      <div class="modal_container-info">
+  <div class="modal__overlay" @click="catalog.itemClicked.isClicked=false" v-if="catalog.itemClicked.isClicked">
+    <div class="modal__container" @click.stop>
+      <div class="modal__image-container"><img :src="catalog.itemClicked.item.img_url" alt=""></div>
+      <div class="modal__info-container">
         <p>{{catalog.itemClicked.item.name}}</p>
         <p>{{catalog.itemClicked.item.description}}</p>
         <p>{{catalog.itemClicked.item.tech_info}}</p>
@@ -12,14 +12,14 @@
           {{ formatNumber(Math.floor(catalog.itemClicked.item.max_price_eur * catalog.euro_ex_rate)) }} ₽
         </p>
         <p>{{ catalog.itemClicked.item.min_price_eur }} - {{ catalog.itemClicked.item.max_price_eur }} €</p>
-        <button class="buy-button-base"
+        <button class="modal__button modal__button--base"
         @click="catalog.addToCart(catalog.itemClicked.item, Math.floor(catalog.itemClicked.item.min_price_eur * catalog.euro_ex_rate)), 
         catalog.itemClicked.isClicked=false">
           <p>Добавить в корзину</p>
           <p>Базовая комлектация</p>
           <p>{{ formatNumber(Math.floor(catalog.itemClicked.item.min_price_eur * catalog.euro_ex_rate)) }} ₽</p>
         </button>
-        <button class="buy-button-prem" @click="catalog.addToCart(catalog.itemClicked.item, Math.floor(catalog.itemClicked.item.max_price_eur * catalog.euro_ex_rate)), 
+        <button class="modal__button modal__button--premium" @click="catalog.addToCart(catalog.itemClicked.item, Math.floor(catalog.itemClicked.item.max_price_eur * catalog.euro_ex_rate)), 
         catalog.itemClicked.isClicked=false">
           <p>Добавить в корзину</p>
           <p>Полная комлектация</p>
@@ -27,7 +27,6 @@
         </button>
       </div>
     </div>
-    
   </div>
 </template>
 

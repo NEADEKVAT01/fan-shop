@@ -1,5 +1,5 @@
 /* NavBar - Base Styles */
-.nav {
+.nav-bar {
   padding: 0.5rem 1rem;
   font-family: Lato;
   font-weight: 400;
@@ -9,58 +9,66 @@
   flex-wrap: wrap;
 }
 
-.nav__separator {
+.nav-bar__separator {
   margin: 0 0.25rem;
   color: #666;
 }
 
-.nav__link-root,
-.nav__link-page {
+.nav-bar__link--root,
+.nav-bar__link--page {
   text-decoration: none;
   white-space: nowrap;
 }
 
-.nav__link-root {
+.nav-bar__link--root {
   color: #33374E;
 }
 
-.nav__link-page {
+.nav-bar__link--page {
   color: #797B86;
 }
 
-.nav__link-root:hover,
-.nav__link-page:hover {
+.nav-bar__link--root:hover,
+.nav-bar__link--page:hover {
   color: #000000;
   text-decoration: underline;
 }
 
 /* Tablet and larger */
 @media (min-width: 576px) {
-  .nav {
+  .nav-bar {
     padding: 0.8rem 1.5rem;
     font-size: 12px;
   }
   
-  .nav__separator {
+  .nav-bar__separator {
     margin: 0 0.4rem;
   }
 }
 
 @media (min-width: 768px) {
-  .nav {
+  .nav-bar {
     padding: 1rem 0;
     font-size: 13px;
   }
   
-  .nav__separator {
+  .nav-bar__separator {
     margin: 0 0.5rem;
   }
 }
 
 @media (min-width: 992px) {
-  .nav {
+  .nav-bar {
     max-width: 1440px;
     margin: 0 auto;
     font-size: 14px;
   }
+}
+
+.nav-bar__link--root { 
+  color: #33374E;
+}
+
+.nav-bar__link--page {
+  color: #797B86;
 }

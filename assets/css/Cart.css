@@ -29,7 +29,7 @@
   font-size: 16px;
 }
 
-.cart__clear {
+.cart__clear-button {
   margin-left: auto;
   background: none;
   padding: 5px 10px;
@@ -39,9 +39,10 @@
   text-underline-offset: 0.25rem;
   font-weight: 400;
   font-size: 14px;
+  border: none;
 }
 
-.cart__clear:hover {
+.cart__clear-button:hover {
   color: black;
   text-decoration: underline black;
 }
@@ -178,7 +179,7 @@
 }
 
 /* Installation Section */
-.cart__installment {
+.cart__installment-section {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -196,19 +197,19 @@
   accent-color: #007bff;
 }
 
-.cart__installment img {
+.cart__installment-section img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
 
-.cart__installment__title {
+.cart__installment-title {
   display: block;
   font-weight: 600;
   font-size: 14px;
 }
 
-.cart__installment__description {
+.cart__installment-description {
   font-weight: 400;
   font-size: 12px;
   color: #797B86;
@@ -272,8 +273,8 @@
 }
 
 /* Buttons */
-.cart__checkout,
-.cart__quick-buy {
+.cart__checkout-button,
+.cart__quickbuy-button {
   display: block;
   width: 100%;
   height: 48px;
@@ -283,26 +284,26 @@
   font-size: 16px;
 }
 
-.cart__checkout {
+.cart__checkout-button {
   background: #0069B4;
   border: 1px solid #0069B4;
   color: #FFFFFF;
   font-weight: 600;
 }
 
-.cart__checkout:hover {
+.cart__checkout-button:hover {
   background-color: #003e6b;
   cursor: pointer;
 }
 
-.cart__quick-buy {
+.cart__quickbuy-button {
   background: #FFFFFF;
   border: 1px solid #0069B4;
   color: #0069B4;
   font-weight: 600;
 }
 
-.cart__quick-buy:hover {
+.cart__quickbuy-button:hover {
   background-color: #dddddd;
   cursor: pointer;
 }
